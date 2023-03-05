@@ -48,7 +48,7 @@ vim toc
 # insert recipe into pdf file
 pdftocio "${pdf_file_name}" < toc
 
-mv "$pdf_file_name" "$destination_path"
-rm recipe.toml toc "$output_file_name"
+mv "$output_file_name" "$destination_path"
+rm recipe.toml toc "$pdf_file_name"
 
 echo "-----\033[44mPDF file with TOC has been generated!\033[0m-----"

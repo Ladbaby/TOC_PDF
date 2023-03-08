@@ -36,7 +36,7 @@ for i in $(seq 1 $max_depth); do
     title=${title:-"Introduction"}
 
     # write to recipe.toml
-    pdfxmeta -p "${page_number}" -a 1 "${pdf_file_name}" "${title}" >> recipe.toml
+    pdfxmeta -p "${page_number}" -a $i "${pdf_file_name}" "${title}" >> recipe.toml
 done
 
 # generate toc file using recipe
